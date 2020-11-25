@@ -48,7 +48,9 @@ function get_array_eltype(element)
 end
 
 """
-Reads a LabVIEW generated XML file
+    readxml(path::String) -> Dict{String,Any}
+
+Reads a LabVIEW generated XML file and returns a `Dict`.
 """
 function readxml(path::String)
     function loopelements(element, dict)
